@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<title>HTML5 Piano</title>
+		<script type="text/javascript">
+			if (window.location.host.indexOf("github.com") > -1)
+				window.location = "http://www.html5piano.com";
+		</script>
+
+		<link rel="stylesheet" type="text/css" media="screen" href="piano.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+		<div id="header">
+			<img src="resources/HTML5_Badge_64.png" />
+			<h1><span>Canvas Piano</span></h1>
+			<a href="https://github.com/Mpdreamz/html5-piano"
+
+   class="gitforked-button gitforked-forks gitforked-watchers">Fork</a>
+		</div>
+		<div id="midsection">
+		Chord: <select id="chordSelector"></select>	
+		Speed: <select id="speedSelector">
+			<option value="600">Normal</option>
+			<option value="1000">Slow</option>
+			<option value="400">Fast</option>
+			<option value="200">Very Fast</option>
+		</select>		
+		
+		<canvas id="c" width="844" height="230"></canvas>
+		</div>
+		<div id="content">
+			<p>
+
+<a href="http://twitter.com/share?text=The HTML5 Piano&url=www.html5piano.com" class="twitter-share-button">Tweet your creation</a>
+
+
+<!-- AddThis Button END -->
+			</p>
+			<p>
+				HTML5 Canvas Piano, is a "fully" functional piano sequencer created entirely in the browser using  &lt;canvas /&gt;
+				and &lt;audio/&gt; It can play and visualize single notes <em>and chords</em>.
+			</p>
+			<p>
+				You can only control the first 2 octaves, the other two are purely visual.
+			</p>
+			<p>
+				Below the piano you find three rows of squares. The tiny top row is the position lane, you can click on any the blocks on this lane to skip directly to a position. The two rows below the position lane are the sequencer lanes. Clicking a block will mark it for editing, whichever note / chord you'll click next will slide into that slot. Clicking again on the block marked for editing will clear the slot.
+			</p>
+			<h2>Hall of fame.</h2>
+			<p>
+				If you've made something cool with the html5 piano and tweet the url to your creation I will hotlink you here 
+				fully credited.
+			</p>
+			<h2>Is it reliable?</h2>
+			<p>
+				To run the piano you need a modern browser, preferably
+				Firefox 4+ or Chrome 12+. Internet explorer 9 will draw
+				the piano but wont actually play the notes.
+			</p>
+			<h2>Author</h2>
+			<p>
+				Made by Martijn Laarman (<a href="http://www.twitter.com/mpdreamz">@Mpdreamz</a>)
+			</p>
+			<h2>License information</h2>
+			<p>
+				Code and images (Html5 logo excluded) are MIT licensed.
+			</p>
+			<p>
+				Samples taken from <a href="http://www.freesound.org/packsViewSingle.php?id=3957">freesound.org</a> courtesy of <a href="http://timtapesstuff.wordpress.com/">Tim Tapes</a> and are licensed under:
+				<a rel="license" href="http://creativecommons.org/licenses/sampling+/1.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/sampling+/1.0/80x15.png" /></a>
+			<p>
+			<div id="chordsInplay">
+			
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="chords.js"></script>
+		<script type="text/javascript" src="sequencer.js"></script>
+		<script type="text/javascript" src="piano.js"></script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-11134618-3']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		<script src="http://gitforked.com/api/1.1/button.js" type="text/javascript"></script>
+					<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+		
+	</body> 
+</head>	
+ 
