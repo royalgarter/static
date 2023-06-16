@@ -3209,7 +3209,7 @@ const defaultOptions = {
 };
 {
   defaultOptions.defaultUrl = {
-    value: "compressed.tracemonkey-pldi-09.pdf",
+    value: "pdfjs-viewer-editor.pdf",
     kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {
